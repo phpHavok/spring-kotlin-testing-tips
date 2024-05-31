@@ -54,7 +54,7 @@ interface PersonRepository : CrudRepository<PersonDo, Long> {
 data class PersonDo(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
+    private val id: Long,
     @Column
     val axid: String,
     @Column
