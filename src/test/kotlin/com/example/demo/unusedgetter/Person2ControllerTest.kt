@@ -11,7 +11,7 @@ import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.http.HttpStatus
 
 @ExtendWith(MockKExtension::class)
-class PersonControllerTest {
+class Person2ControllerTest {
     @InjectMockKs
     private lateinit var subject: PersonController
 

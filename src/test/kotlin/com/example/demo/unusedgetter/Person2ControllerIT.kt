@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
-class PersonControllerIT {
+class Person2ControllerIT {
     @Autowired
     private lateinit var mockMvc: MockMvc
 
@@ -25,7 +25,7 @@ class PersonControllerIT {
         mockMvc.perform(
             post("/person")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("""{"axid":  "axid2", "name":  "jacoco"}""")
+                .content("""{"axid":  "axid2", "name":  "jacoco"}"""),
         )
             .andExpectAll(
                 status().isOk,
